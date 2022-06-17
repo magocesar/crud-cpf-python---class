@@ -5,8 +5,6 @@ from time import sleep
 from main import banco_de_dados
 
 def menu():
-    from time import sleep
-    from main import banco_de_dados
     ops = ('[1] - Cadastrar Usuários',
     '[2] - Editar Dados',
     '[3] - Mostrar Dados Indivíduais',
@@ -41,9 +39,8 @@ def menu():
                     sleep(1)     
                     break
 
+
 def sub_menu():
-    from time import sleep
-    from main import banco_de_dados
     ops = ('[1] - Editar Nome',
     '[2] - Editar CPF',
     '[3] - Editar Data de Nascimento',
