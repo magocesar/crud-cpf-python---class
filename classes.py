@@ -132,6 +132,20 @@ class Bd:
             print('Retornando ao Menu...')
             sleep(1)
 
-                
+    def apagar_cadastro(self):
+        cpf = inserir_cpf()
+        find = False
+        for index, cadastro in enumerate(self.banco_de_dados):
+            if cadastro.retornar_cpf() == cpf:
+                find = True
+                self.banco_de_dados.pop(index)
+                print('Dados de Usuário Apagados do Banco de Dados')
+                print('Retornando ao Menu...')
+                sleep(1)
+        if not find:
+            print('CPF não Cadastrado no Banco de Dados')
+            print('Retornando ao Menu...')
+            sleep(1)
+                    
 
     
