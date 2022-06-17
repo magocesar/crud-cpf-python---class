@@ -39,7 +39,7 @@ def menu():
                 elif ask == 5:
                     print('Até Breve!')
                     sleep(1)     
-
+                    break
 
 def sub_menu():
     from time import sleep
