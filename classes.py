@@ -62,8 +62,7 @@ class Bd:
                 print('Retornando ao Menu...')
                 sleep(1)
         if not find:
-            user = Person(nome, cpf, data)
-            self.banco_de_dados.append(user)
+            self.banco_de_dados.append(Person(nome, cpf, data))
             print('Usuário Cadastrado com Sucesso no Banco de Dados')
             print('Retornando ao Menu...')
             sleep(1)
